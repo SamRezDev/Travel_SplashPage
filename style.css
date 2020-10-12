@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+::after {
+	box-sizing: none;
+}
+:root {
+	--color-pink: #faa7ed;
+	--color-navy: #0c1f72;
+	--color-navy-opaque: rgba(6, 0, 79, 0.77);
+	--color-light: #8b7a7a;
+	--color-dark: #252525;
+}
+body {
+	background-image: url(./imgs/backgroundmain.jpg);
+	font-family: 'Assistant', sans-serif;
+	font-size: 24px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+}
+.bg {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bigcontainer {
+	border: 4px solid black;
+	border-radius: 25px;
+	width: 90%;
+	height: 80%;
+	/* bring your own prefixes */
+
+	background-color: rgba(255, 255, 255, 0.5);
+
+	/* Black w/opacity/see-through */
+}
+.navbar {
+	margin: 20px 20px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar > img {
+	height: 60px;
+	margin-top: 20px;
+	margin-left: 60px;
+}
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+}
+.titlescreen {
+	margin: 50px 00px 0px 100px;
+	font-size: 3em;
+}
+.titlescreenstyle {
+	color: orange;
+}
+li {
+	margin: 0 15px;
+	list-style-type: none;
+	cursor: pointer;
+}
+li:hover {
+	color: rgb(102, 100, 100);
+}
+li:last-child {
+	margin-left: 20px;
+	font-size: 2em;
+
+	color: black;
+}
+li:last-child:hover {
+	color: rgb(102, 100, 100);
+}
+li:first-child {
+	font-size: 1.5em;
+	color: orange;
+}
+li:first-child:hover {
+	color: rgb(165, 107, 0);
+}
+.InputAndButton {
+	display: flex;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.InputTitle {
+	padding: 0px;
+	box-sizing: none;
+	height: 50px;
+	width: 340px;
+	border: none;
+	text-align: center;
+	border-radius: 25px;
+}
+.ButtonTitle {
+	background-color: orange; /* Green */
+	padding: 0px 0px;
+	border: none;
+	margin-left: 2px;
+	height: 50px;
+	width: 80px;
+	border-radius: 25px;
+}
+.ButtonTitle > i {
+	color: white;
+	font-size: 32px;
+}
+.ButtonTitle:focus {
+	box-shadow: none;
+	outline: none;
+}
+input:focus {
+	box-shadow: 0 0 3px #1670be;
+	outline-offset: 0px;
+	outline: none;
+}
+button:focus {
+	box-shadow: 0 0 3px #1670be;
+	outline-offset: 0px;
+	outline: none;
+}
+
+.ButtonTitle:hover {
+	transform: scaleX(1.05);
+}
+
+.ButtonTitle {
+	margin-left: -50px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: initial;
+		justify-content: center;
+		align-items: center;
+	}
+	.InputAndButton {
+		margin: auto 25px auto 50px;
+	}
+}
+
+@media only screen and (max-width: 1320px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: initial;
+		justify-content: center;
+		align-items: center;
+	}
+	ul {
+		display: flex;
+
+		flex-wrap: initial;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.9em;
+		white-space: nowrap;
+	}
+	li {
+		margin-top: 5px;
+	}
+	li:last-child {
+		text-align: center;
+		margin-left: 0px;
+	}
+	ul {
+	}
+	.bg {
+		position: static;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.bigcontainer {
+		width: 100%;
+		height: 100%;
+		border: 2px solid black;
+	}
+	.titlescreen {
+		font-weight: 800;
+
+		margin: 20px 0 0 50px;
+		font-size: 2em;
+	}
+	.InputAndButton {
+		margin: 25px 25px auto 50px;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	ul {
+		display: flex;
+		flex-direction: row;
+		font-size: 1.25em;
+	}
+	li {
+		border-bottom: 2px solid black;
+		font-size: 0.5em;
+	}
+	li:last-child {
+		font-size: 1.5em;
+	}
+	.titlescreen {
+		margin-top: 50px;
+		margin-bottom: 150px;
+	}
+}
